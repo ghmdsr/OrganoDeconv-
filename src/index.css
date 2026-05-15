@@ -1,0 +1,51 @@
+/* OrganoDeconv — global theme */
+:root {
+  --od-bg: #eef1f7;
+  --od-bg-deep: #e2e8f0;
+  --od-surface: #ffffff;
+  --od-surface-glass: rgba(255, 255, 255, 0.78);
+  --od-text: #0f172a;
+  --od-text-secondary: #475569;
+  --od-text-muted: #64748b;
+  --od-accent: #4f46e5;
+  --od-accent-hover: #4338ca;
+  --od-accent-soft: rgba(79, 70, 229, 0.12);
+  --od-accent-glow: rgba(99, 102, 241, 0.35);
+  --od-teal: #0d9488;
+  --od-teal-soft: rgba(13, 148, 136, 0.12);
+  --od-border: rgba(15, 23, 42, 0.08);
+  --od-radius-sm: 10px;
+  --od-radius-md: 14px;
+  --od-radius-lg: 20px;
+  --od-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+  --od-shadow-md: 0 8px 32px rgba(15, 23, 42, 0.08);
+  --od-shadow-lg: 0 20px 50px rgba(15, 23, 42, 0.1);
+  --od-shadow-accent: 0 12px 40px rgba(79, 70, 229, 0.18);
+  --od-font: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--od-font);
+  background: var(--od-bg);
+  color: var(--od-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(79, 70, 229, 0.2);
+  color: var(--od-text);
+}

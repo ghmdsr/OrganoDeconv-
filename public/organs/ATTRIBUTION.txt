@@ -1,0 +1,8 @@
+Organ pictograms on the home page are from Health Icons
+(https://healthicons.org), MIT License — Resolve to Save Lives.
+
+Files (filled / body category from the Health Icons collection):
+- intestine.svg — intestine
+- liver.svg — liver
+- bone.svg — spine (used as a bone-related illustration; no separate “bone” icon in set)
+- salivary_gland.svg — mouth (closest match for salivary / oral region)

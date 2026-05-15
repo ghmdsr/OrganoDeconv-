@@ -1,8 +1,12 @@
 /**
  * API 클라이언트. 토큰은 AuthContext에서 가져와 헤더에 붙임.
- * VITE_API_URL 비어 있으면 '/api' 사용 → Vite 프록시가 같은 서버의 8000으로 전달 (노트북이 8000 직접 접속 불필요).
+ * - 개발: VITE_API_URL 비우면 '/api' → Vite proxy → localhost:5188
+ * - 프로덕션(Vercel): VITE_API_URL 없으면 공개 API 도메인 사용 (vercel.app/api 는 SPA rewrite로 405)
  */
-const BASE_URL = (import.meta.env.VITE_API_URL || '').trim() || '/api'
+const PROD_API_DEFAULT = 'https://api-organodeconv.genome-intelligence-lab.org'
+const BASE_URL =
+  (import.meta.env.VITE_API_URL || '').trim() ||
+  (import.meta.env.PROD ? PROD_API_DEFAULT : '/api')
 
 export function getBaseUrl() {
   return BASE_URL
